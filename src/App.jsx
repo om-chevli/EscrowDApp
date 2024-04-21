@@ -2,6 +2,7 @@ import { ethers } from "ethers";
 import { useEffect, useState } from "react";
 import deploy from "../scripts/deploy";
 import Escrow from "./components/Escrow";
+import logo from "./assets/logo.png"
 
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 
@@ -47,6 +48,9 @@ function App() {
   }
   return (
     <>
+      <div className="logo-section">
+        <img src={logo} alt="Logo" />
+      </div>
       <div className="contract">
         <h1> Create Escrow Contract </h1>
         <label>

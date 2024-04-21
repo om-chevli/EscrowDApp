@@ -1,3 +1,4 @@
+import "../App.css"
 export default function Escrow({
   address,
   broker,
